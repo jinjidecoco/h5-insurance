@@ -1,0 +1,25 @@
+{
+  "name": "h5-insurance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinjidecoco/h5-insurance.git"
+  },
+  "author": "coco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinjidecoco/h5-insurance/issues"
+  },
+  "homepage": "https://github.com/jinjidecoco/h5-insurance#readme",
+  "devDependencies": {
+    "changed": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jshint": "^2.0.4"
+  }
+}

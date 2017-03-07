@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport">   
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <title>保单服务</title>
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <style type="text/css">
+        
+  </style>
+<script>
+    var scale = 1 / devicePixelRatio;
+  document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';   
+  </script>
+</head>
+<body>
+   <section class="form">
+    <form action="#">
+        <h3>投保人（投保人即主被保人）</h3>
+        <div class="form-item">
+            <label for="#">姓名</label>
+            <input type="text" placeholder="请输入投保人姓名">
+        </div>
+        <div class="form-item">
+           <label>证件类型</label>
+           <div class="select">
+              <select >
+                <option readonly>请选择证件类型</option>
+                <option>身份证</option>
+                <option>出生证</option>
+                <option>护照</option>
+              </select>
+           </div>   
+        </div>
+        <div class="form-item">
+            <label for="#">证件号码</label>
+            <input type="number" placeholder="请输入证件号码">
+        </div>
+        <div class="form-item">
+           <label>性别</label>
+           <div class="select">
+              <select>
+                <option>请选择性别</option>
+                <option>男</option>
+                <option>女</option>
+              </select>
+           </div> 
+        </div>
+        <div class="form-item">
+           <label for="">出生日期</label>
+           <input type="datetime"  placeholder="请选择出生日期">
+        </div>
+        <div class="form-item">
+            <label for="#">手机号</label>
+            <input type="number" placeholder="请输入手机号">
+        </div>
+        <div class="form-item">
+            <label for="#">电子邮箱</label>
+            <input type="text" placeholder="选填,方便为您寄送电子账单">
+        </div>
+        <div class="form-item">
+          <label>头像</label>
+          <input type="file">
+        </div>
+    </form>
+   </section> 
+    <footer>
+      <nav class="bottom-nav"> 
+        <a href="home_page.html">
+          <i class="icon icon-home_page cur"></i>
+          <p class="cur">首页</p>
+        </a>
+        <a href="insurance-serve.html">
+          <i class="icon icon-ins_serve"></i>
+          <p>保单服务</p>
+        </a>
+        <a href="message.html">
+          <i class="icon icon-message"></i>
+          <p>消息</p>
+        </a>
+        <a href="mine.html">
+          <i class="icon icon-mine"></i>
+          <p>我的</p>
+        </a>
+      </nav>
+    </footer> 
+</body>
+</html>

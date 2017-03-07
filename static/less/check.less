@@ -1,0 +1,172 @@
+
+.check-ways{
+		background: @white;
+		margin-top:0.1067rem;
+		padding:0 0.1333rem;
+		h3{
+			font-size: 0.48rem;
+			line-height: 0.8rem;
+			font-weight: normal;
+		}
+		a{
+			display: flex;
+			line-height: 1.2rem;
+		    border-top: 1px solid @line;
+		    font-size: 0.3733rem;
+		    justify-content: space-between;
+		    align-items: center;
+		}
+}
+/************我的订单tab页面******************************/
+.tab-items{
+	background: @white;
+    display: flex;
+       a{	
+       flex:1;
+       text-align: center;
+       padding: 0.24rem 0;
+       font-size: 0.2rem;
+       &.cur{
+    	border-bottom: 0.0267rem solid  @blue;
+    	color: @blue;
+    	position:relative;
+       &::after{
+          content:'';
+          position:absolute;
+          width:0;
+          height:0;
+          border-width: 0 10px 10px 10px;
+          border-color:transparent transparent @blue transparent;
+          border-style: solid;
+          z-index:0;
+          bottom:0;
+          left:50%;
+       }
+      }
+    }
+}
+.order-list{
+	.items{
+		background:@bg;
+	  .item{	
+	  		margin-top:0.3333rem;
+	  		padding: 0.4rem 0.5333rem;
+		h3{
+			font-size:0.4267rem;
+			font-weight:normal;
+		}
+		p{  
+           margin-top: 0.2667rem;
+			span{
+				color:#888;
+			}
+			font-size:0.2933rem;
+		}
+		div{
+			margin-top:0.1333rem;
+			border-top:1px solid @line;
+			padding-top: 0.2667rem;
+			a{
+				margin-left: 0.1333rem;
+			}
+		}
+	  }	
+	}
+	.item.cancer{
+		background: url(../img/background-cancer.png) no-repeat center right;
+		background-color:@white;
+	}
+	.item.family{
+		background: url(../img/background-family.png) no-repeat center right;
+		background-color:@white;
+	}
+}
+/****************保单服务****************/
+.servers{
+	.items{
+		.item{
+			margin: 0.2rem auto 0 auto;
+			text-align: center;
+		    a{
+			  padding: 0.9066rem 1.3333rem;
+			   display:block;
+			  .title{
+			  	font-size: 0.64rem;
+			  	color:@white;
+			  }
+			  .way{
+			  	font-size: 0.4rem;
+			  	color:@white;
+			  	margin-top: 0.3867rem;
+			  } 	
+			}
+		}
+		.item.server{
+			background: url(../img/background-polling.png) no-repeat;
+			width:8.9333rem;
+			height:3.2rem;
+			background-size: cover;
+		}
+		.item.provision{
+			background: url(../img/background-provision.png) no-repeat;
+			width:8.9333rem;
+			height:3.2rem;
+			background-size:cover;
+
+		}
+		.item.apply{
+			background: url(../img/background-apply.png) no-repeat;
+			width:8.9333rem;
+			height:3.2rem;
+			background-size:cover;
+		}
+    }
+}
+/*****************消息****************/
+.handle{
+    .message{
+    	padding: 0.4rem 0.2667rem;
+		.btns.clear{
+			padding:0 1.4667rem;
+			line-height: 1.0667rem;
+
+		}
+		.btns.read{
+			padding:0 1.4667rem;
+			background-color: #1b69db;
+			color:@white;
+			margin-left:0.1333rem;
+			line-height: 1.0667rem;
+		}
+    }
+    .items{
+    	.item{
+    		padding: 0.4533rem 0.5067rem;
+    		border-top: 2px solid @line;
+    		time{
+    			font-size:0.32rem;
+    			color:@gray;
+    		}
+    		p{
+    			font-size: 0.4267rem;
+    			color:@dark;
+    			position: relative;
+    			&::before{
+    				content:'';
+    				position: absolute;
+    				border-radius: 50%;
+    				width:0.1333rem;
+    				height:0.1333rem;
+    				top:0.2rem;
+    				left: -0.2667rem;
+    				background: red;
+    			}
+    		}
+    		
+    	}
+    }
+}
+
+
+
+
